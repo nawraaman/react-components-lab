@@ -43,7 +43,7 @@ function App() {
       <h1>Local Weather</h1>
       <section>
         {weatherForecasts.map((forecast) => (
-          <WeatherForecast day={forecast.day} forecast={forecast} />
+          <WeatherForecast key={forecast.day} forecast={forecast} />
         ))}
       </section>
     </>
